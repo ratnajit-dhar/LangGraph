@@ -1,7 +1,7 @@
 # to create a graph, we need to first create a state
 
 import os
-
+from typing import TypedDict
 # 1) Typed Dictionary
 
 class State(TypedDict):
@@ -37,7 +37,7 @@ class State:
 
 # 4) Using Langgraph
 
-from langgraph.graph import MessagesState
+from langgraph.graph import MessageState
 
 class State(MessageState):
     user_name: str
